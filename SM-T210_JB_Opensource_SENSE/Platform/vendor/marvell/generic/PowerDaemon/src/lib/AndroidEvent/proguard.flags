@@ -1,0 +1,3 @@
+-keep class com.marvell.ppdgadget.EventRelay
+-keep class com.marvell.ppdgadget.StartupReceiver
+-keep class com.marvell.ppdgadget.IntentReceiver

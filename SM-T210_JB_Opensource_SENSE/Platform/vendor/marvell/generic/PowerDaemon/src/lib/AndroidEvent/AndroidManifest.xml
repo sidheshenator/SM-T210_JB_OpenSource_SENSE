@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.marvell.ppdgadget"
+  android:sharedUserId="android.uid.system">
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <application android:persistent="true">
+      <service android:name="EventRelay">
+        <intent-filter>
+          <action android:name="com.marvell.ppdgadget.EventRelay"/>
+        </intent-filter>
+      </service>
+      <receiver android:name="StartupReceiver" android:priority="2">
+        <intent-filter>
+          <action android:name="android.intent.action.BOOT_COMPLETED" />
+        </intent-filter>
+      </receiver>
+    </application>
+</manifest>

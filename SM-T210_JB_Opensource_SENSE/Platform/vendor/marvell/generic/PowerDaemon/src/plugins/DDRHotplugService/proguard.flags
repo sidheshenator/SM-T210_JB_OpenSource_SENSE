@@ -1,0 +1,3 @@
+-keep class com.marvell.ddrhotplug.DDRHotplugService
+-keep class com.marvell.ddrhotplug.DDRHotplugUEventObserver
+-keep class com.marvell.ddrhotplug.DDRHotplugBootCompleteReceiver
